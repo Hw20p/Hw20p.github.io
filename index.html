@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>이현우 — Backend Developer</title>
+<meta name="description" content="이현우의 개발 포트폴리오. Spring Boot, Java 기반 백엔드 개발 프로젝트와 기술 스택을 소개합니다.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="desktop" id="desktop">
+
+  <!-- Menu bar -->
+  <header class="menubar">
+    <div class="menubar-left">
+      <span class="menubar-logo">◆</span>
+      <span class="menubar-title" id="menubar-title">이현우 — Backend Developer</span>
+    </div>
+    <div class="menubar-right">
+      <span class="menubar-clock" id="menubar-clock">00:00</span>
+      <button id="theme-toggle" class="theme-toggle" aria-label="다크/라이트 모드 전환">
+        <span class="icon icon-sun">☀️</span>
+        <span class="icon icon-moon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Desktop hint (shown when no window open) -->
+  <div class="desktop-hint" id="desktop-hint">
+    <img class="desktop-hint-avatar" src="assets/images/profile.jpg" alt="이현우 프로필 사진">
+    <p class="desktop-hint-quote">"기술을 통해 더 나은 세상을 만들어가고 싶습니다"</p>
+    <p class="desktop-hint-sub">아래 Dock 아이콘을 클릭해서 살펴보세요</p>
+  </div>
+
+  <!-- Backdrop -->
+  <div class="backdrop" id="backdrop"></div>
+
+  <!-- Windows -->
+  <div class="window-layer" id="window-layer">
+
+    <section class="window" id="window-about" data-title="About — 이현우">
+      <div class="window-titlebar">
+        <span class="traffic-lights">
+          <button class="traffic close" data-close aria-label="닫기">×</button>
+          <button class="traffic minimize" data-close aria-label="닫기">−</button>
+          <button class="traffic maximize" data-maximize aria-label="전체화면 전환"><span>□</span></button>
+        </span>
+        <span class="window-titletext">About — 이현우</span>
+      </div>
+      <div class="window-content">
+        <div class="about-card">
+          <img class="about-avatar" src="assets/images/profile.jpg" alt="이현우 프로필 사진">
+          <div class="about-main">
+            <h2>이현우</h2>
+            <p class="about-role">$ whoami → Backend Developer</p>
+            <p class="about-bio">
+              사람들의 경험을 향상시키고 문제를 해결할 수 있는 백엔드 개발자로서 끊임없이 학습하고 성장하고자 합니다.
+              Java, MySQL, Spring Boot 등을 활용하여 안정적이고 확장 가능한 시스템을 구축해왔으며,
+              RESTful API 개발과 데이터베이스 연동을 통해 효율적인 데이터 처리 방안을 모색하는 것을 즐깁니다.
+            </p>
+            <div class="about-actions">
+              <a href="mailto:dlgusdn0129@naver.com" class="btn btn-primary">✉️ 이메일 보내기</a>
+              <a href="https://github.com/Hw20p" target="_blank" rel="noopener" class="btn btn-outline">💻 GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="info-block">
+            <h3>🎓 Education</h3>
+            <ul class="timeline">
+              <li>
+                <span class="timeline-date">2020.03 – 2024.09</span>
+                <span class="timeline-title">선문대학교</span>
+                <span class="timeline-sub">컴퓨터공학과 · 학점 4.04 / 4.5</span>
+              </li>
+              <li>
+                <span class="timeline-date">2017.03 – 2020.02</span>
+                <span class="timeline-title">태안고등학교</span>
+                <span class="timeline-sub">자연계(이과)</span>
+              </li>
+            </ul>
+          </div>
+          <div class="info-block">
+            <h3>📋 Certification</h3>
+            <ul class="timeline">
+              <li>
+                <span class="timeline-date">2025.09</span>
+                <span class="timeline-title">정보처리기사</span>
+                <span class="timeline-sub">한국산업인력공단</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="window" id="window-skills" data-title="Skills — 이현우">
+      <div class="window-titlebar">
+        <span class="traffic-lights">
+          <button class="traffic close" data-close aria-label="닫기">×</button>
+          <button class="traffic minimize" data-close aria-label="닫기">−</button>
+          <button class="traffic maximize" data-maximize aria-label="전체화면 전환"><span>□</span></button>
+        </span>
+        <span class="window-titletext">Skills — 이현우</span>
+      </div>
+      <div class="window-content">
+        <p class="section-sub">효율적이고 확장 가능한 시스템을 위해 백엔드 개발을 공부하고 있습니다.</p>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <div class="tags">
+              <span class="tag">Java</span>
+              <span class="tag">Python</span>
+              <span class="tag">C</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Frameworks</h3>
+            <div class="tags">
+              <span class="tag">Spring Boot</span>
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Libraries</h3>
+            <div class="tags">
+              <span class="tag">Spring Data JPA</span>
+              <span class="tag">TensorFlow</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Databases</h3>
+            <div class="tags">
+              <span class="tag">MySQL</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Tools &amp; Platforms</h3>
+            <div class="tags">
+              <span class="tag">AWS Lightsail</span>
+              <span class="tag">Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="window window-wide" id="window-projects" data-title="Projects — 이현우">
+      <div class="window-titlebar">
+        <span class="traffic-lights">
+          <button class="traffic close" data-close aria-label="닫기">×</button>
+          <button class="traffic minimize" data-close aria-label="닫기">−</button>
+          <button class="traffic maximize" data-maximize aria-label="전체화면 전환"><span>□</span></button>
+        </span>
+        <span class="window-titletext">Projects — 이현우</span>
+      </div>
+      <div class="window-content">
+
+        <div class="projects-view" id="projects-view">
+          <p class="section-sub">담당한 프로젝트를 최신순으로 구성했습니다. 카드를 클릭하면 상세 내용을 볼 수 있어요.</p>
+          <div class="projects-grid">
+
+            <article class="project-card" data-project="guild" role="button" tabindex="0" aria-label="길드 관리 시스템 상세보기">
+              <div class="project-head">
+                <h3>길드 관리 시스템</h3>
+                <span class="project-period">2025.07 – 2025.07</span>
+              </div>
+              <p class="project-role">1인 개발</p>
+              <p class="project-desc">
+                게임/커뮤니티 길드 구성원 정보를 관리하는 웹 플랫폼. 길드원 및 캐릭터 CRUD, 검색·필터링,
+                디스코드 메시지 파싱·분류, 게시판, 엑셀 다운로드 기능을 기획부터 배포까지 단독으로 구현.
+              </p>
+              <div class="tags">
+                <span class="tag">Spring Boot</span>
+                <span class="tag">Thymeleaf</span>
+                <span class="tag">H2 Database</span>
+                <span class="tag">JPA</span>
+              </div>
+            </article>
+
+            <article class="project-card" data-project="cleancode" role="button" tabindex="0" aria-label="AI 클린코드 학습 플랫폼 상세보기">
+              <div class="project-head">
+                <h3>AI 클린코드 학습 플랫폼</h3>
+                <span class="project-period">2025.03 – 2025.06</span>
+              </div>
+              <p class="project-role">백엔드·프론트엔드·팀장</p>
+              <p class="project-desc">
+                AI로 알고리즘 사고력과 코드 품질을 함께 향상시키는 교육 플랫폼. 자연어 기반 알고리즘 검사,
+                RAG(ChromaDB) 기반 AI 클린코드 리뷰, JWT 인증, 채점·순위·업적 기능을 팀장으로서 총괄 개발.
+              </p>
+              <div class="tags">
+                <span class="tag">Spring Boot</span>
+                <span class="tag">React</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">ChromaDB</span>
+                <span class="tag">Llama</span>
+              </div>
+            </article>
+
+            <article class="project-card" data-project="codereview" role="button" tabindex="0" aria-label="AI CodeReview 상세보기">
+              <div class="project-head">
+                <h3>AI CodeReview</h3>
+                <span class="project-period">2024.09 – 2024.12</span>
+              </div>
+              <p class="project-role">백엔드·프론트엔드·팀장</p>
+              <p class="project-desc">
+                LLaMA 3.1 8B 모델과 Pylint를 결합해 코드 품질 피드백을 자동 생성하는 코드 리뷰 자동화 플랫폼.
+                메인/순위/코드 제출 페이지 구현 및 팀 일정·병합 관리 총괄. IoT6기 프로젝트 경연대회 장려상 수상.
+              </p>
+              <div class="tags">
+                <span class="tag">Spring Boot</span>
+                <span class="tag">React</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Docker Swarm</span>
+              </div>
+            </article>
+
+            <article class="project-card" data-project="connecthub" role="button" tabindex="0" aria-label="ConnectHub 상세보기">
+              <div class="project-head">
+                <h3>ConnectHub</h3>
+                <span class="project-period">2024.04 – 2024.06</span>
+              </div>
+              <p class="project-role">백엔드</p>
+              <p class="project-desc">
+                시각장애인을 위한 접근성 웹 플랫폼. TTS 기반 실시간 의견 교환 기능 제공.
+                로그인/회원가입, 게시글 수정, 알림, TTS 기능 구현. 해당 과목 A+ 성적 취득.
+              </p>
+              <div class="tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">React</span>
+                <span class="tag">mysql2</span>
+              </div>
+            </article>
+
+            <article class="project-card" data-project="levelup" role="button" tabindex="0" aria-label="Project: Level Up 상세보기">
+              <div class="project-head">
+                <h3>Project: Level Up</h3>
+                <span class="project-period">2024.05 – 2024.05</span>
+              </div>
+              <p class="project-role">1인 개발</p>
+              <p class="project-desc">
+                강화 버튼을 클릭해 무한 레벨업하는 모바일 앱. 로그인/회원가입, 인벤토리, 칭호·랭킹,
+                탐색·상점·워프 기능을 Firebase 기반으로 기획부터 개발까지 단독 구현. 만점 및 A+ 취득.
+              </p>
+              <div class="tags">
+                <span class="tag">React Native</span>
+                <span class="tag">Firebase</span>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="project-detail" data-project-detail="guild" hidden>
+          <button class="detail-back" data-back>← 목록으로</button>
+          <div class="detail-head">
+            <h3>길드 관리 시스템</h3>
+            <span class="project-period">2025.07 – 2025.07</span>
+          </div>
+          <p class="project-role">1인 개발</p>
+          <div class="tags">
+            <span class="tag">Spring Boot</span>
+            <span class="tag">Thymeleaf</span>
+            <span class="tag">H2 Database</span>
+            <span class="tag">JPA</span>
+          </div>
+          <div class="detail-section">
+            <h4>프로젝트 개요</h4>
+            <p>게임/커뮤니티 길드 구성원 정보를 효율적으로 관리하는 웹 플랫폼. 길드원 등록/수정/삭제, 서브·기사 캐릭터 관리, 이름 기반 검색·필터링, 디스코드 채팅 로그 분석 및 사용자별 분류, 게시판, 엑셀 다운로드 기능을 제공합니다.</p>
+          </div>
+          <div class="detail-section">
+            <h4>담당 업무</h4>
+            <ul class="detail-list">
+              <li>길드 및 길드원 관리 기능 설계·개발</li>
+              <li>서브·기사 캐릭터 관리 기능 구현</li>
+              <li>이름·캐릭터명 기반 검색 및 필터링 개발</li>
+              <li>디스코드 메시지 파싱 및 사용자별 분류 기능 구현</li>
+              <li>DB 설계(JPA, MySQL/H2) 및 REST API 설계·구현</li>
+              <li>UI/UX 설계부터 배포까지 1인 전담</li>
+            </ul>
+          </div>
+          <div class="detail-section">
+            <h4>트러블슈팅</h4>
+            <p>Spring Boot Jar를 Launch4j로 .exe 변환 시 서버가 구동되지 않는 문제가 발생했습니다. GUI 빌드 대신 <code>./gradlew clean bootJar</code>로 직접 빌드한 공식 jar를 Launch4j에 적용해 해결했습니다.</p>
+          </div>
+          <div class="detail-section">
+            <h4>느낀점</h4>
+            <p>기획부터 실행 파일 생성까지 개발 프로세스를 단독으로 경험하며, MVC 패턴 적용과 빌드·배포 과정에 대한 이해를 높일 수 있었습니다.</p>
+          </div>
+        </div>
+
+        <div class="project-detail" data-project-detail="cleancode" hidden>
+          <button class="detail-back" data-back>← 목록으로</button>
+          <div class="detail-head">
+            <h3>AI 클린코드 학습 플랫폼</h3>
+            <span class="project-period">2025.03 – 2025.06</span>
+          </div>
+          <p class="project-role">백엔드·프론트엔드·팀장</p>
+          <div class="tags">
+            <span class="tag">Spring Boot</span>
+            <span class="tag">React</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">ChromaDB</span>
+            <span class="tag">Llama</span>
+          </div>
+          <div class="detail-section">
+            <h4>프로젝트 개요</h4>
+            <p>AI를 활용해 개발자의 알고리즘 사고력과 코드 품질을 함께 향상시키는 교육 플랫폼. 자연어로 작성한 문제 해결 과정을 AI가 분석하는 "프롬프트 기반 알고리즘 검사"와, 코드를 분석해 개선점을 제시하는 "AI 클린코드 리뷰" 두 가지 핵심 기능으로 구성됩니다.</p>
+          </div>
+          <div class="detail-section">
+            <h4>담당 업무</h4>
+            <ul class="detail-list">
+              <li>문제 생성 및 목록/관리 기능 구현</li>
+              <li>채점 현황 및 코드 채점 기능 구현</li>
+              <li>업적·순위·프로필 기능 구현</li>
+              <li>JWT 기반 인증 및 세션 유지 처리</li>
+              <li>전체 UI 디자인 담당</li>
+              <li>팀장으로서 발표와 형상 관리 주도</li>
+            </ul>
+          </div>
+          <div class="detail-section">
+            <h4>트러블슈팅</h4>
+            <p>AI가 존재하지 않는 클린코드 규칙을 생성하는 <strong>할루시네이션 문제</strong>가 발생했습니다. ChromaDB 기반 RAG(Retrieval-Augmented Generation)를 도입해 154개의 검증된 규칙을 벡터화하고, 제목·설명·카테고리에 가중치를 적용한 벡터 검색으로 관련 규칙을 선별함으로써 해결했습니다.</p>
+          </div>
+          <div class="detail-section">
+            <h4>느낀점</h4>
+            <p>담당 영역은 백엔드·프론트엔드였지만, 팀 전체의 기술 스택을 이해하려 노력한 덕분에 AI 팀원의 문제까지 파악하고 해결 방향을 제시할 수 있었습니다. 팀장으로서 협업 관리의 중요성을 체득한 프로젝트였습니다.</p>
+          </div>
+        </div>
+
+        <div class="project-detail" data-project-detail="codereview" hidden>
+          <button class="detail-back" data-back>← 목록으로</button>
+          <div class="detail-head">
+            <h3>AI CodeReview</h3>
+            <span class="project-period">2024.09 – 2024.12</span>
+          </div>
+          <p class="project-role">백엔드·프론트엔드·팀장</p>
+          <div class="tags">
+            <span class="tag">Spring Boot</span>
+            <span class="tag">React</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Docker Swarm</span>
+          </div>
+          <div class="detail-section">
+            <h4>프로젝트 개요</h4>
+            <p>AI를 활용해 개발자의 코드 품질 향상과 학습 효율 증대를 동시에 도모하는 코드 리뷰 자동화 플랫폼. LLaMA 3.1 8B 모델을 코드 리뷰용으로 미세 조정해 점수 평가와 피드백을 자동 생성하고, Pylint로 정량적 코드 품질 점수를 함께 제공합니다.</p>
+          </div>
+          <div class="detail-section">
+            <h4>담당 업무</h4>
+            <ul class="detail-list">
+              <li>로그인/회원가입, 메인·순위·업적·코드 제출 페이지 구현</li>
+              <li>프론트엔드-백엔드 API 연동 구현</li>
+              <li>칸반 보드를 활용한 프로젝트 일정 관리</li>
+              <li>코드 리뷰와 GitHub 병합 관리 총괄 (팀장)</li>
+            </ul>
+          </div>
+          <div class="detail-section">
+            <h4>트러블슈팅</h4>
+            <p>프론트(3000)-백엔드(8080) 간 <strong>CORS 정책 위반</strong>이 발생했습니다. 컨트롤러마다 <code>@CrossOrigin</code>을 개별 적용하던 방식 대신, <code>CorsConfigurationSource</code> Bean으로 전역 설정을 구성해 근본적으로 해결했습니다.</p>
+          </div>
+          <div class="detail-section">
+            <h4>느낀점</h4>
+            <p>임시방편이 아닌 근본적인 해결책을 고민하는 자세의 중요성을 깨달았습니다. IoT6기 프로젝트 경연대회에서 장려상을 수상했습니다.</p>
+          </div>
+          <div class="project-links">
+            <a href="https://youtu.be/uSU4TSIUq4c?si=GNEM8xbOTBcWda0D" target="_blank" rel="noopener">시연 영상 ↗</a>
+          </div>
+        </div>
+
+        <div class="project-detail" data-project-detail="connecthub" hidden>
+          <button class="detail-back" data-back>← 목록으로</button>
+          <div class="detail-head">
+            <h3>ConnectHub</h3>
+            <span class="project-period">2024.04 – 2024.06</span>
+          </div>
+          <p class="project-role">백엔드</p>
+          <div class="tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">React</span>
+            <span class="tag">mysql2</span>
+          </div>
+          <div class="detail-section">
+            <h4>프로젝트 개요</h4>
+            <p>시각장애인을 위한 접근성을 고려한 웹 플랫폼으로, TTS(Text-to-Speech) 기능을 통해 실시간 의견 교환과 소통을 지원합니다.</p>
+          </div>
+          <div class="detail-section">
+            <h4>담당 업무</h4>
+            <ul class="detail-list">
+              <li>로그인, 회원가입, 게시글 수정 기능 구현</li>
+              <li>아이디·비밀번호 찾기, 프로필 기능 구현</li>
+              <li>알림 기능 및 TTS 기능 구현</li>
+            </ul>
+          </div>
+          <div class="detail-section">
+            <h4>트러블슈팅</h4>
+            <p>초기에 <code>.env</code> 파일과 <code>node_modules</code> 등이 실수로 GitHub에 커밋되는 문제가 있었습니다. <code>.gitignore</code>를 구성해 민감 정보와 불필요한 파일을 버전 관리에서 제외함으로써 해결했고, 사전 예방의 중요성을 배웠습니다.</p>
+          </div>
+          <div class="detail-section">
+            <h4>느낀점</h4>
+            <p>4인 팀 프로젝트를 통해 역할을 나누고 협력하는 것이 얼마나 효율적인지 깨달았습니다. 해당 과목에서 A+ 성적을 취득했습니다.</p>
+          </div>
+          <div class="project-links">
+            <a href="https://youtu.be/gmJd25XZh_8?si=vyqk6bcB-hXT2dbw" target="_blank" rel="noopener">시연 영상 ↗</a>
+          </div>
+        </div>
+
+        <div class="project-detail" data-project-detail="levelup" hidden>
+          <button class="detail-back" data-back>← 목록으로</button>
+          <div class="detail-head">
+            <h3>Project: Level Up</h3>
+            <span class="project-period">2024.05 – 2024.05</span>
+          </div>
+          <p class="project-role">1인 개발</p>
+          <div class="tags">
+            <span class="tag">React Native</span>
+            <span class="tag">Firebase</span>
+          </div>
+          <div class="detail-section">
+            <h4>프로젝트 개요</h4>
+            <p>사용자가 강화 버튼을 클릭해 무한으로 레벨업하는 스타일의 모바일 프로그램. 로그인/회원가입, 인벤토리, 칭호, 랭킹, 탐색, 상점, 워프 기능을 기획부터 개발까지 혼자 구현했습니다.</p>
+          </div>
+          <div class="detail-section">
+            <h4>담당 업무</h4>
+            <ul class="detail-list">
+              <li>로그인 및 회원가입, 인벤토리 기능 구현</li>
+              <li>칭호, 랭킹 기능 구현</li>
+              <li>탐색, 상점, 워프 기능 구현</li>
+              <li>Firebase를 통한 데이터 관리</li>
+            </ul>
+          </div>
+          <div class="detail-section">
+            <h4>트러블슈팅</h4>
+            <p>기능이 늘어날수록 컴포넌트 간 의존성과 중복 코드가 증가하는 문제가 있었습니다. Firebase 호출 함수를 별도 파일로 분리하고 기능별로 컴포넌트를 모듈화해 유지보수성과 확장성을 높였습니다.</p>
+          </div>
+          <div class="detail-section">
+            <h4>느낀점</h4>
+            <p>Firebase를 처음 활용해본 경험이자, 기획부터 개발까지 1인으로 완성한 첫 모바일 앱 프로젝트였습니다. 모바일 프로그래밍 과목에서 만점 및 A+를 취득했습니다.</p>
+          </div>
+          <div class="project-links">
+            <a href="https://youtu.be/tBSj1SfwGpE?si=PHtNJeuuyEEbzzzh" target="_blank" rel="noopener">시연 영상 ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="window" id="window-activities" data-title="Activities — 이현우">
+      <div class="window-titlebar">
+        <span class="traffic-lights">
+          <button class="traffic close" data-close aria-label="닫기">×</button>
+          <button class="traffic minimize" data-close aria-label="닫기">−</button>
+          <button class="traffic maximize" data-maximize aria-label="전체화면 전환"><span>□</span></button>
+        </span>
+        <span class="window-titletext">Activities — 이현우</span>
+      </div>
+      <div class="window-content">
+        <p class="section-sub">참여했던 교육 및 활동을 최신순으로 구성했습니다.</p>
+        <ul class="timeline timeline-vertical">
+          <li>
+            <span class="timeline-date">2025.05</span>
+            <span class="timeline-title">2025년도 제11회 SW알고리즘 경진대회</span>
+            <span class="timeline-sub">금상 수상 (단장상)</span>
+          </li>
+          <li>
+            <span class="timeline-date">2025.05</span>
+            <span class="timeline-title">2025 선문 창업IDEA 경진대회</span>
+            <span class="timeline-sub">참여</span>
+          </li>
+          <li>
+            <span class="timeline-date">2024.09 – 2024.12</span>
+            <span class="timeline-title">2024 대학·기업 협력형 SW아카데미 (IoT빅데이터 응용 교육과정)</span>
+            <span class="timeline-sub">빅데이터 플랫폼 아키텍처 설계, Spring Boot 백엔드 개발, 딥러닝(TensorFlow·PyTorch) 학습</span>
+          </li>
+          <li>
+            <span class="timeline-date">2024.11</span>
+            <span class="timeline-title">2024년도 제10회 SW알고리즘 경진대회</span>
+            <span class="timeline-sub">참여</span>
+          </li>
+          <li>
+            <span class="timeline-date">2024.10</span>
+            <span class="timeline-title">전자정부 표준프레임워크 수료</span>
+            <span class="timeline-sub">Spring 기반 웹 애플리케이션 개발, RESTful API 설계, 보안·인증 처리</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="window" id="window-contact" data-title="Contact — 이현우">
+      <div class="window-titlebar">
+        <span class="traffic-lights">
+          <button class="traffic close" data-close aria-label="닫기">×</button>
+          <button class="traffic minimize" data-close aria-label="닫기">−</button>
+          <button class="traffic maximize" data-maximize aria-label="전체화면 전환"><span>□</span></button>
+        </span>
+        <span class="window-titletext">Contact — 이현우</span>
+      </div>
+      <div class="window-content">
+        <p class="section-sub">궁금하신 점이 있다면 편하게 연락 주세요.</p>
+        <div class="contact-links">
+          <a href="mailto:dlgusdn0129@naver.com" class="contact-link">
+            <span class="contact-icon">✉️</span> dlgusdn0129@naver.com
+          </a>
+          <a href="https://github.com/Hw20p" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-icon">💻</span> github.com/Hw20p
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Dock -->
+  <nav class="dock" aria-label="주요 메뉴">
+    <button class="dock-icon" data-window="about" aria-label="About">
+      <span class="dock-emoji">👤</span>
+      <span class="dock-label">About</span>
+    </button>
+    <button class="dock-icon" data-window="skills" aria-label="Skills">
+      <span class="dock-emoji">🛠️</span>
+      <span class="dock-label">Skills</span>
+    </button>
+    <button class="dock-icon" data-window="projects" aria-label="Projects">
+      <span class="dock-emoji">💼</span>
+      <span class="dock-label">Projects</span>
+    </button>
+    <button class="dock-icon" data-window="activities" aria-label="Activities">
+      <span class="dock-emoji">🏆</span>
+      <span class="dock-label">Activities</span>
+    </button>
+    <button class="dock-icon" data-window="contact" aria-label="Contact">
+      <span class="dock-emoji">✉️</span>
+      <span class="dock-label">Contact</span>
+    </button>
+    <span class="dock-divider"></span>
+    <a class="dock-icon" href="https://github.com/Hw20p" target="_blank" rel="noopener" aria-label="GitHub (새 탭에서 열기)">
+      <span class="dock-emoji">🐙</span>
+      <span class="dock-label">GitHub</span>
+    </a>
+  </nav>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
